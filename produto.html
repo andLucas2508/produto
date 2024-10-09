@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="icon" href="img/favicon.ico" type="imagem">
+    
+</head>
+<body>
+
+     <!--barra de navegação-->
+     <nav>
+        <ul>
+            
+            <li><a href="#home"><img src="img/favicon.ico" alt=""></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li class="dropdown">
+                <a href="#servicos" class="dropbtn">Serviços</a>
+                <ul class="dropdown-content">
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#desenvolvimento">Desenvolvimento</a></li>
+                    <li><a href="#marketing">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <BR><BR><BR>
+    
+    <main>
+        <!--seção de produto-->
+        <section class="produto">
+            <!--div que contem as imagens do produto-->
+            <div class="imagens-produto">
+                <!--imagem principal do produto-->
+                <img src="img/apple-touch-icon.png" alt="produto principal" class="imagem-principal" id="imagem-principal">
+                <!--miniaturas das imagens-->
+                <div class="miniaturas">
+                    <img src="img/1favicon-32x32.png" alt="miniatura 1" class="miniatura" data-imagem="miniatura 1">
+                    <img src="img/2favicon-32x32.png" alt="miniatura 2" class="miniatura" data-imagem="miniatura 2">
+                    <img src="img/3favicon-32x32.png" alt="miniatura 3" class="miniatura" data-imagem="miniatura 3">
+
+                </div>
+            </div>
+        <!--div que contem os detalhes do produto-->
+        <div class="detalhes-produto">
+            <!--nome do produto-->
+            <h2>Nome do Produto</h2>
+            <!--descrição do produto-->
+            <p class="descrição">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, cumque.</p>
+            <!--preço do produto-->
+            <p class="preco"> R$ 149,99</p>
+
+            <!--formulario para selecionar tamanho e cor do produto-->
+            <form class="opcoes-compra">
+                 <!--seleção de tamanho-->
+                 <label for="tamanho">Tamanho:</label>
+                 <select id="tamanho">
+                    <option>P</option>
+                    <option>M</option>
+                    <option>G</option>
+                 </select>
+                 <!--seleção de cor-->
+                 <label for="cor">Cor:</label>
+                 <select id="cor">
+                    <option>Vermelho</option>
+                    <option>Azul</option>
+                    <option>Preto</option>
+                 </select>
+                 <!--botao de comprar-->
+                 <button type="submit">Comprar</button>
+            </form>
+        </div>
+        </section>
+
+        <!--seção de comentários dos clientes-->
+        <section class="comentários">
+            <h3>Comentários dos clientes</h3> <!--Titulo da seleção de comentários-->
+            <!--comentario 1-->
+            <div class="comentário">
+                <!--foto do usuario-->
+                <img src="img/favicon1.ico" alt="foto de bag" class="foto-usuario">
+                <!--nome e depoimento do usuario-->
+                <p><strong>Gab:</strong> Muito bom,gostei muito, otima qualidade.</p>
+
+
+                 <!--comentario 2-->
+            <div class="comentário">
+                <!--foto do usuario-->
+                <img src="img/favicon2.ico" alt="foto de joao" class="foto-usuario">
+                <!--nome e depoimento do usuario-->
+                <p><strong>João:</strong> Muito bom,gostei muito, otima qualidade.</p>
+
+                 <!--comentario 3-->
+            <div class="comentário">
+                <!--foto do usuario-->
+                <img src="img/favicon3.ico" alt="foto de fernando" class="foto-usuario">
+                <!--nome e depoimento do usuario-->
+                <p><strong>Fernando:</strong> Muito bom,gostei muito, otima qualidade.</p>
+            </div>
+        </section>
+    </main>
+    <script src=”produto.js”></script>
+</body>
+</html>
